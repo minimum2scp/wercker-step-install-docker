@@ -1,0 +1,15 @@
+name: install-docker
+version: 0.1.0
+description: install docker command.
+keywords:
+  - docker
+properties:
+  path:
+    type: string
+    required: false
+    default: /usr/bin/docker
+  version:
+    type: string
+    required: false
+    default: 1.6.2
+
