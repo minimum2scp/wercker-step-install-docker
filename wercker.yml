@@ -1,11 +1,6 @@
-box: debian
+box: wercker/default
 build:
     steps:
-        - install-packages:
-            packages: nodejs
-        - script:
-            name: create symlink /usr/local/bin/node
-            code: ln -s /usr/bin/nodejs /usr/local/bin/node
         - validate-wercker-step
         - shellcheck:
             files: run.sh
